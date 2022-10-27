@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>BasketScores</title>
+</head>
+<body class="font-Raleway">
+<div class="w-full h-screen bg-cover overflow-hidden bg-no-repeat"
+ style="background-image: url('/img/joel-mott-8g8hbQMkIwI-unsplash.jpg');" >
+    <div class="h-screen w-full flex justify-center items-center">
+        <div class="bg-[#1B244A] h-full w-full bg-clip-padding backdrop-filter backdrop-blur- bg-opacity-10 border border-gray-100 rounded-lg p-10">
+          <h1 class="text-center text-4xl text-white uppercase mb-8 font-extrabold"> score-board</h1>
+        <div class="flex justify-center gap-10">
+          <div class="">
+               <h1 class="text-white font-bold text-4xl">HOME</h1>
+               <div id="home-text" class="text-7xl text-[#F94F6D] font-bold text-center mt-3 py-2 px-3 bg-black rounded-lg shadow-2xl shadow-[#1B244A]"> 0</div>
+               <div class="flex flex-col md:flex-row gap-1 mt-10">
+               <button id="plus-one" class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8]" onclick="addPlusOne()">+1</button>
+               <button  class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8]" onclick="addPlusTwo()">+2</button>
+               <button class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8]" onclick="addPlusThree()">+3</button>
+          </div>
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-4xl">GUEST</h1>
+            <div id="guest-text" class="text-7xl text-[#F94F6D] font-bold text-center mt-3 py-2 px-3 bg-black rounded-lg shadow-2xl shadow-[#1B244A] "> 0</div>
+             <div class="flex flex-col md:flex-row gap-1 mt-10">
+            <button class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8]" onclick="addSecPlusOne()">+1</button>
+            <button class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8]" onclick="addSecPlusTwo()">+2</button>
+            <button class=" mt-3 p-2 px-3 py-2 font-normal text-[#9AABD8] border-2 border-[#9AABD8] rounded-xl shadow-2xl shadow-[#9AABD8] " onclick="addSecPlusThree()">+3</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>  
+</body>
+<script src="index.js"></script>
+</html>
